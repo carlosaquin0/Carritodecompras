@@ -106,6 +106,12 @@ const pintarFooter = () => {
     const clone = templateFooter.cloneNode(true)
     fragment.appendChild(clone)
     footer.appendChild(fragment)
+
+    const btnVaciar = document.getElementById('vaciar-carrito') //boton vaciasr carrito
+    btnVaciar.addEventListener('click', ()=> {
+        carrito = {}
+        pintarCarrito()
+    })
 }
 
 //modificar cantidad carrito
@@ -127,6 +133,8 @@ const btnAccion = e =>{
           }
           pintarCarrito()  ///actualizo el carrito
     }
+    
+    
 
     e.stopPropagation()
 }

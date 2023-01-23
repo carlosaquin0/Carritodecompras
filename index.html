@@ -8,13 +8,12 @@
     <title>Cafe veloz</title>
 </head>
 <body>
-    
+
 <div class="container">
     <h1>Carrito</h1>
     <hr>
 
-    <table class="table">
-        <thead>
+    <table class="table">   <!--resultado del carrito-->
           <tr>
             <th scope="col">#</th>
             <th scope="col">Item</th>
@@ -26,7 +25,7 @@
         <tbody id="items"></tbody>
         <tfoot>
           <tr id="footer">
-            <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+             <th scope="row" colspan="5">Carrito vacío - Hace tu pedido!</th>
           </tr>
         </tfoot>
       </table>
@@ -34,7 +33,7 @@
     <div class="row" id="cards"></div>
 </div>    
 
-<template id="template-card">
+<template id="template-card">   <!--objetos-->
     <div class="col-12 mb-2 col-md-4">
       <div class="card">
         <img src="" alt="" class="card-img-top">
@@ -48,7 +47,7 @@
   </template>
 
   
-  <template id="template-footer">
+  <template id="template-footer"> <!--modificadores de carrito-->
     <th scope="row" colspan="2">Total productos</th>
     <td>10</td>
     <td>

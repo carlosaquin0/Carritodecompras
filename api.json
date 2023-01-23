@@ -1,38 +1,38 @@
 [
     {
-      "precio": 500,
+      "precio": 150,
       "id": 1,
       "title": "Café",
-      "thumbnailUrl": "https://picsum.photos/id/0/600"
+      "thumbnailUrl": "https://s1.eestatic.com/2017/02/13/cocinillas/cocinillas_193495389_116293001_1706x960.jpg"
     },
     {
-      "precio": 300,
+      "precio": 200,
       "id": 2,
-      "title": "Pizza",
-      "thumbnailUrl": "https://picsum.photos/id/10/600"
-    },
-    {
-      "precio": 100,
-      "id": 3,
-      "title": "Agua",
-      "thumbnailUrl": "https://picsum.photos/id/20/600"
-    },
-    {
-      "precio": 50,
-      "id": 4,
-      "title": "Sandía",
-      "thumbnailUrl": "https://picsum.photos/id/30/600"
-    },
-    {
-      "precio": 10,
-      "id": 5,
-      "title": "Mango",
-      "thumbnailUrl": "https://picsum.photos/id/40/600"
+      "title": "Cafe con leche",
+      "thumbnailUrl": "https://i.blogs.es/421374/cafe-con-leche2/1366_2000.jpg"
     },
     {
       "precio": 150,
+      "id": 3,
+      "title": "Agua",
+      "thumbnailUrl": "https://mercado.com.ar/wp/wp-content/uploads/2021/03/agua.jpg"
+    },
+    {
+      "precio": 250,
+      "id": 4,
+      "title": "Tostado de Jamon y Queso",
+      "thumbnailUrl": "https://assets.unileversolutions.com/recipes-v2/210587.jpg?imwidth=1200"
+    },
+    {
+      "precio": 250,
+      "id": 5,
+      "title": "Capuccino",
+      "thumbnailUrl": "https://cdn0.recetasgratis.net/es/posts/2/4/2/capuchino_16242_600.webp"
+    },
+    {
+      "precio": 350,
       "id": 6,
-      "title": "Chela",
-      "thumbnailUrl": "https://picsum.photos/id/50/600"
+      "title": "Cafe con dos Medialunas",
+      "thumbnailUrl": "https://1.bp.blogspot.com/-bFwqsF1edDQ/YIPyrIuuDoI/AAAAAAAAMv8/wsZxaWIn9T8UxyIG8io32pT3nHAFTiKEQCLcBGAsYHQ/s700/cafecon%2Bleche12345678912.jpg"
     }
   ]

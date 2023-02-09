@@ -138,3 +138,20 @@ const btnAccion = e =>{
 
     e.stopPropagation()
 }
+
+//funcion validacion de direccion
+
+const miInput = document.querySelector('input');
+
+
+miInput.addEventListener('input', () => {
+    // Quita el mensaje según escribes
+    miInput.setCustomValidity('');
+    // Comprueba si debe validarlo
+    miInput.checkValidity();
+});
+
+// Muestra el mensaje de validación
+miInput.addEventListener('invalid', () => {
+    miInput.setCustomValidity('Si no aceptas no puedes continuar');
+});

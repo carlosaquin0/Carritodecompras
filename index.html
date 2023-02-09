@@ -9,10 +9,40 @@
 </head>
 <body>
 
+
 <div class="container">
     <h1>Café Veloz</h1>
     <hr>
+<div>
 
+<!--chequear envio-->
+<div class="nombre calle">
+  <form>
+    <label for="name">Nombre de calle: </label>
+    <input type="text" name="name" id="name" required pattern="^[a-zA-Z0-9 ]*$" autocomplete="off">
+</form>
+<div class="Numero">
+  <form>
+    <label for="name">Numero de telefono: </label>
+    <input type="number" required>
+</form>
+</div>
+
+<div class="envio">
+  <form>
+    <label>
+        <input type="checkbox" required autocomplete="off"> Solo envio a domicilio
+    </label>
+    <button>Enviar</button>
+</form>
+</div>
+
+<!---boton finalizar-->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Finalizar compra
+</button>
+
+</div>
     <table class="table">   <!--resultado del carrito-->
           <tr>
             <th scope="col">#</th>
@@ -32,6 +62,7 @@
 
     <div class="row" id="cards"></div>
 </div>    
+
 
 <template id="template-card">   <!--objetos-->
     <div class="col-12 mb-2 col-md-4">

@@ -151,19 +151,6 @@ miInput.addEventListener('input', () => {
     miInput.checkValidity();
 });
 
-// Muestra el mensaje de validación
-miInput.addEventListener('invalid', () => {
-    miInput.setCustomValidity('Si no aceptas no puedes continuar');
-});
-
-const btnConfirmar = document.getElementById("confirmarBtn")
-if (btnConfirmar) {
-
-  btnConfirmar.addEventListener("click", toggleConfirmar)
-}
-function toggleConfirmar(e) {
-  e.preventDefault();
-}
 
 const formulario = document.querySelector("#formDirec");
 formulario.addEventListener('confirmar', validarDirecc)

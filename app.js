@@ -107,7 +107,7 @@ const pintarFooter = () => {
     fragment.appendChild(clone)
     footer.appendChild(fragment)
 
-    const btnVaciar = document.getElementById('vaciar-carrito') //boton vaciasr carrito
+    const btnVaciar = document.getElementById('vaciar-carrito') //boton vaciar carrito
     btnVaciar.addEventListener('click', ()=> {
         carrito = {}
         pintarCarrito()
@@ -155,3 +155,31 @@ miInput.addEventListener('input', () => {
 miInput.addEventListener('invalid', () => {
     miInput.setCustomValidity('Si no aceptas no puedes continuar');
 });
+
+const btnConfirmar = document.getElementById("confirmarBtn")
+if (btnConfirmar) {
+
+  btnConfirmar.addEventListener("click", toggleConfirmar)
+}
+function toggleConfirmar(e) {
+  e.preventDefault();
+}
+
+const formulario = document.querySelector("#formDirec");
+formulario.addEventListener('confirmar', validarDirecc)
+
+function validarDirecc (e){
+    e.preventDefault();
+    const direcc = document.querySelector("#nomCasa").value
+    const numero = document.querySelector("#numCasa").value
+}
+
+
+
+const finPedido = document.getElementById('confirmar') //boton vaciar carrito
+    finPedido.addEventListener('click', ()=> {
+        carrito = {}
+        pintarCarrito()
+        swal(`Su pedido se enviara a la direccion ingresada`)
+    })
+

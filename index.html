@@ -8,39 +8,53 @@
     <title>Café Veloz</title>
 </head>
 <body>
-
-
+<!--titulo-->
 <div class="container">
     <h1>Café Veloz</h1>
     <hr>
 <div>
 
-<!--chequear envio-->
-<div class="nombre calle">
-  <form>
+<div>  
+
+    <button class="btn btn-outline-danger" type="submit" data-bs-toggle="modal" data-bs-target="#myModal">
+        <i class="bi-cart-fill me-1"></i>
+        Finalizar compra
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <div>
+                    <!--chequear envio-->
+<div>
+  <form id="formDirec">
     <label for="name">Nombre de calle: </label>
-    <input type="text" name="name" id="name" required pattern="^[a-zA-Z0-9 ]*$" autocomplete="off">
+    <input type="text" name="name" id="nomCasa" required pattern="^[a-zA-Z0-9 ]*$" autocomplete="off">
+    <label for="name">Numero de casa: </label>
+    <input type="number" id="numCasa" required>
 </form>
-<div class="Numero">
-  <form>
-    <label for="name">Numero de telefono: </label>
-    <input type="number" required>
+</div>
+</div>
+                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+</div>
+    <div class="modal-footer">
+      <button class="btn btn-danger" id="confirmar">Confirmar</button>
+      </div>
+      </div>
+     </div>
+    </div>
 </form>
 </div>
 
-<div class="envio">
-  <form>
-    <label>
-        <input type="checkbox" required autocomplete="off"> Solo envio a domicilio
-    </label>
-    <button>Enviar</button>
-</form>
-</div>
 
 <!---boton finalizar-->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Finalizar compra
-</button>
+
 
 </div>
     <table class="table">   <!--resultado del carrito-->
@@ -109,5 +123,7 @@
 
 
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
